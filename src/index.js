@@ -1,11 +1,11 @@
-exports.min = function min(array) {
+exports.min = function min(...array) {
     return array != 0 ? Math.min(...array) : 0;
 };
 
-exports.max = function max(array) {
+exports.max = function max(...array) {
     return array != 0 ? Math.max(...array) : 0;
 };
 
-exports.avg = function avg(array) {
+exports.avg = function avg(...array) {
     return array != 0 ? array.reduce((a, b) => a + b) / array.length : 0;
 };
